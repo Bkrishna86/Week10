@@ -1,0 +1,36 @@
+
+import os
+
+def main()
+  directory=input("Enter the name of the directory you want to save files on in path format: ")
+  fileName = ("what is the name of the file you want to give?: ")
+  yourName = ("Enter your name: ")
+  address = ("Enter your address: ")
+  Phone = ("Enter your phone number: ")
+
+#Checking to making sure the directory exists and writing files to it separated by commas.
+
+  if os.path.isdir(directory):
+    writeFile=open(os.path.join(directory, fileName), 'w')
+    writeFile.write(name+','+address+','+phone+'\n') 
+#closing the file
+    writeFile.close()
+    
+    Print("***********************File Contents***************************")
+    
+    readFile = open(os.path.join(directory.fileName), 'r')
+    print(line)
+  else: 
+    print("Sorry that directory doesn't exists...")
+main()
+
+
+
+
+
+
+
+
+
+
+
